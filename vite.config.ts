@@ -7,6 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      injectRegister: "auto",
       includeAssets: ["favicon.ico", "icons/icon-192x192.png", "icons/icon-512x512.png"],
       manifest: {
         name: "Amana Supermarket Auditing App",
@@ -17,8 +18,8 @@ export default defineConfig({
         display: "standalone",
         start_url: "/",
         icons: [
-          { "src": "icons/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
-          { "src": "icons/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+          { src: "icons/icon-192x192.png", sizes: "192x192", type: "image/png" },
+          { src: "icons/icon-512x512.png", sizes: "512x512", type: "image/png" }
         ]
       }
     })
